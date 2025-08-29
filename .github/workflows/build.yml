@@ -20,11 +20,13 @@ jobs:
         run: npm install
 
       - name: Zip the Complete Package
-        run: zip -r ../oracle-backend.zip .
+        # This now zips the correct files into the current directory
+        run: zip -r oracle-backend.zip server.js package.json node_modules
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: oracle-backend-package
-          path: ../oracle-backend.zip
+          # This now points to the correctly located zip file
+          path: oracle-backend.zip
           
