@@ -1,0 +1,18 @@
+{
+  "name": "unseen-oracle-backend",
+  "version": "1.0.0",
+  "description": "Custom backend for the AI SysAdmin and OSINT agent.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-ws": "^5.0.2",
+    "node-fetch": "^2.7.0",
+    "node-pty": "^1.0.0"
+  }
+}
